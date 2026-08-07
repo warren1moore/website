@@ -1,18 +1,21 @@
 import type { NextConfig } from "next";
 
+const STATIC_EXPORT = process.env.STATIC_EXPORT === "true";
+
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "m.media-amazon.com",
-      },
-      {
-        protocol: "https",
-        hostname: "images-na.ssl-images-amazon.com",
-      },
-    ],
-  },
+  ...(STATIC_EXPORT
+    ? {
+        output: "export",
+        images: { unoptimized: true },
+      }
+    : {
+        images: {
+          remotePatterns: [
+            { protocol: "https", hostname: "m.media-amazon.com" },
+            { protocol: "https", hostname: "images-na.ssl-images-amazon.com" },
+          ],
+        },
+      }),
 };
 
 export default nextConfig;
