@@ -6,7 +6,7 @@ export const site = {
     tagline: "Professional Book Promotion That Helps Authors Reach More Readers.",
   },
   hero: {
-    headline: "Every Book Deserves\nAn Audience.",
+    headline: "Warren Moore.\nBook Promotion.",
     declaration:
       "We believe publishing a book is an act of courage. That courage deserves professional support. Not automation, not templates, not empty promises — strategic promotion built around your work, your genre, your audience.",
     primaryCta: "Submit Your Book",

@@ -1,7 +1,7 @@
 import { site } from "@/data/site";
 
 export default function StructuredData() {
-  const baseUrl = "https://warrenmoorebookpromotion.com";
+  const baseUrl = "https://warrenmoore.cv";
 
   const personSchema = {
     "@context": "https://schema.org",

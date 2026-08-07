@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const siteUrl = "https://warrenmoorebookpromotion.com";
+const siteUrl = "https://warrenmoore.cv";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
