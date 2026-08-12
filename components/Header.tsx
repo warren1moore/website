@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpen, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { site } from "@/data/site";
 
@@ -13,9 +14,15 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between h-20">
         <a
           href="#"
-          className="flex items-center gap-2.5 font-serif font-bold text-lg text-foreground tracking-tight hover:text-primary transition-colors"
+          className="flex items-center gap-3 font-serif font-bold text-lg text-foreground tracking-tight hover:text-primary transition-colors"
         >
-          <BookOpen className="w-5 h-5 text-primary" />
+          <Image
+            src="/book.jpeg"
+            alt="Book"
+            width={28}
+            height={28}
+            className="rounded-sm"
+          />
           {site.brand.name}
         </a>
 
